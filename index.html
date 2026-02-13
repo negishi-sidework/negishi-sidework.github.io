@@ -6,7 +6,7 @@
     <title>Negishi | Portfolio</title>
     <meta
       name="description"
-      content="エンジニア Negishi のプロフィールサイト。経歴・スキルセット・制作物・リンク集をまとめています。"
+      content="上場企業でプロダクトマネージャーを務める Negishi のプロフィールサイト。プロダクトマネジメントや事業・プロダクトの相談、副業でのご支援内容をまとめています。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -14,10 +14,12 @@
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <div class="avatar" aria-hidden="true">N</div>
+          <div class="avatar">
+            <img src="assets/profile.png" alt="Negishi のプロフィール写真" />
+          </div>
           <div>
             <h1 class="site-title">Negishi</h1>
-            <p class="site-subtitle">Software Engineer / Side Work</p>
+            <p class="site-subtitle">Product Manager / Consultant</p>
           </div>
         </div>
         <nav class="nav">
@@ -33,13 +35,13 @@
       <section class="hero">
         <div class="container hero-inner">
           <div>
-            <p class="hero-label">Side Work Portfolio</p>
+            <p class="hero-label">Product Manager &amp; Consultant</p>
             <h2 class="hero-title">
-              「任せて安心」と思ってもらえる<br />エンジニアでありたい。
+              プロダクトとチームの前進を、<br />一緒にデザインしていきたい。
             </h2>
             <p class="hero-text">
               ここでは、副業としてご一緒できる方に向けて、<br />
-              簡単な自己紹介・スキルセット・公開しているアウトプットをまとめています。
+              プロダクトマネージャーとしての関わり方や、これまでの経験領域を簡単にまとめています。
             </p>
             <div class="hero-actions">
               <a href="#contact" class="btn primary">問い合わせ・連絡方法を見る</a>
@@ -53,24 +55,29 @@
         <div class="container">
           <h2 class="section-title">About</h2>
           <p class="section-lead">
-            エンジニアとしての簡単な自己紹介や、これまでの経験・興味のある領域を記載するセクションです。
-            実際のプロフィール情報が固まり次第、このテキストを書き換えていきましょう。
+            プロダクトマネージャーとしてのバックグラウンドや、関わってきた領域・スタイルを簡単にまとめています。
+            ユーザーヒアリングや課題整理から、必要に応じてプロトタイピング・ツール実装まで、一気通貫でご一緒できる形をイメージしています。
           </p>
           <div class="grid two-cols">
             <div>
               <h3 class="section-subtitle">プロフィール</h3>
               <ul class="list">
-                <li><strong>名前</strong>：Negishi（仮）</li>
-                <li><strong>ロール</strong>：ソフトウェアエンジニア / Web エンジニア</li>
-                <li><strong>興味領域</strong>：Web アプリケーション開発、クラウド（GCP / AWS）、開発効率化</li>
+                <li><strong>名前</strong>：Negishi</li>
+                <li><strong>ロール</strong>：プロダクトマネージャー（本業） / 副業でのプロダクト・事業支援</li>
+                <li><strong>所属</strong>：国内上場企業（プロダクトマネージャー）</li>
+                <li><strong>経験年数</strong>：社会人経験 15 年超（うち前半はシステムエンジニアとして開発に従事）</li>
+                <li><strong>興味領域</strong>：プロダクト戦略、ユーザー体験設計、チームとプロセスづくり、業務効率化ツール</li>
               </ul>
             </div>
             <div>
-              <h3 class="section-subtitle">できることの例</h3>
+              <h3 class="section-subtitle">ご支援できることの例</h3>
               <ul class="list">
-                <li>小〜中規模の Web アプリの設計・実装</li>
-                <li>既存サービスの改善・機能追加</li>
-                <li>開発環境の整備（Docker 化、Lint / テスト導入など）</li>
+                <li>ユーザーヒアリング〜課題整理〜プロトタイピング・実装までの一気通貫の伴走</li>
+                <li>プロダクトの方向性・ロードマップの整理</li>
+                <li>ユーザーヒアリング結果などを踏まえた課題整理と優先度付け</li>
+                <li>要件定義〜仕様策定〜バックログ作成の伴走</li>
+                <li>開発チームとのコミュニケーション設計やスクラム運営のサポート</li>
+                <li>日々の業務を楽にする軽量なツール・スクリプトの設計・実装（SaaS 連携など）</li>
               </ul>
             </div>
           </div>
@@ -81,29 +88,33 @@
         <div class="container">
           <h2 class="section-title">Skills</h2>
           <p class="section-lead">
-            実際のスキルセットに合わせて、このセクションの内容は後から具体的に更新していきます。
+            普段の業務で使っているスキルセットを、「プロダクトマネジメント」「チーム」「テクノロジー」の観点で整理しています。
           </p>
           <div class="grid three-cols">
             <div class="card">
-              <h3>Language</h3>
+              <h3>Product Management</h3>
               <ul class="list small">
-                <li>TypeScript / JavaScript</li>
-                <li>その他、実際に使っている言語</li>
+                <li>事業・プロダクト目線での課題設定</li>
+                <li>ロードマップ・KPI 設計</li>
+                <li>ユーザーリサーチ / 仮説検証</li>
               </ul>
             </div>
             <div class="card">
-              <h3>Frontend / Backend</h3>
+              <h3>Team &amp; Process</h3>
               <ul class="list small">
-                <li>React / Next.js など</li>
-                <li>Node.js (Express / NestJS 等)</li>
+                <li>スクラム / アジャイル開発の運営</li>
+                <li>仕様調整・ファシリテーション</li>
+                <li>ドキュメンテーション / ナレッジ共有</li>
               </ul>
             </div>
             <div class="card">
-              <h3>Infra / Tools</h3>
+              <h3>Tech Literacy</h3>
               <ul class="list small">
-                <li>Docker / Docker Compose</li>
-                <li>GCP / AWS（予定）</li>
-                <li>Git / GitHub</li>
+                <li>Web / API / インフラ構成の基本理解</li>
+                <li>エンジニアとの技術的なディスカッション</li>
+                <li>AI 補助ツール（Cursor）を活用した検証・プロトタイピング</li>
+                <li>Google Workspace / Redash（SQL）を用いたダッシュボード・レポート作成</li>
+                <li>AWS などクラウド環境の基本的な理解と運用イメージの共有</li>
               </ul>
             </div>
           </div>
@@ -114,8 +125,8 @@
         <div class="container">
           <h2 class="section-title">Works</h2>
           <p class="section-lead">
-            個人開発や副業での制作物を列挙するセクションです。<br />
-            この `side_work` プロジェクトで作成するサンプルアプリや、他のリポジトリへのリンクを配置します。
+            副業・個人として関わっているプロダクトや、公開可能なアウトプットの一部をまとめるセクションです。<br />
+            守秘義務の関係で詳細を記載できないケースもあるため、ここでは概要レベルのご紹介を想定しています。
           </p>
           <div class="grid two-cols">
             <article class="card">
@@ -155,11 +166,11 @@
               <ul class="list">
                 <li>
                   <strong>GitHub</strong>：
-                  <a href="https://github.com/your-github-username" target="_blank" rel="noreferrer"
-                    >https://github.com/your-github-username</a
+                  <a href="https://github.com/negishi-sidework" target="_blank" rel="noreferrer"
+                    >https://github.com/negishi-sidework</a
                   >
                 </li>
-                <li><strong>メール</strong>：example@example.com</li>
+                <li><strong>メール</strong>：negishi330@gmail.com</li>
               </ul>
               <p class="note">
                 ※ セキュリティやスパム対策の観点から、メールアドレスの公開有無や表記方法は慎重に検討してください。
