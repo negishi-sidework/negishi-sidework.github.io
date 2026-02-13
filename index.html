@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Negishi | Portfolio</title>
+    <meta
+      name="description"
+      content="エンジニア Negishi のプロフィールサイト。経歴・スキルセット・制作物・リンク集をまとめています。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="avatar" aria-hidden="true">N</div>
+          <div>
+            <h1 class="site-title">Negishi</h1>
+            <p class="site-subtitle">Software Engineer / Side Work</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <p class="hero-label">Side Work Portfolio</p>
+            <h2 class="hero-title">
+              「任せて安心」と思ってもらえる<br />エンジニアでありたい。
+            </h2>
+            <p class="hero-text">
+              ここでは、副業としてご一緒できる方に向けて、<br />
+              簡単な自己紹介・スキルセット・公開しているアウトプットをまとめています。
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn primary">問い合わせ・連絡方法を見る</a>
+              <a href="#works" class="btn ghost">制作物を見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p class="section-lead">
+            エンジニアとしての簡単な自己紹介や、これまでの経験・興味のある領域を記載するセクションです。
+            実際のプロフィール情報が固まり次第、このテキストを書き換えていきましょう。
+          </p>
+          <div class="grid two-cols">
+            <div>
+              <h3 class="section-subtitle">プロフィール</h3>
+              <ul class="list">
+                <li><strong>名前</strong>：Negishi（仮）</li>
+                <li><strong>ロール</strong>：ソフトウェアエンジニア / Web エンジニア</li>
+                <li><strong>興味領域</strong>：Web アプリケーション開発、クラウド（GCP / AWS）、開発効率化</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="section-subtitle">できることの例</h3>
+              <ul class="list">
+                <li>小〜中規模の Web アプリの設計・実装</li>
+                <li>既存サービスの改善・機能追加</li>
+                <li>開発環境の整備（Docker 化、Lint / テスト導入など）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-lead">
+            実際のスキルセットに合わせて、このセクションの内容は後から具体的に更新していきます。
+          </p>
+          <div class="grid three-cols">
+            <div class="card">
+              <h3>Language</h3>
+              <ul class="list small">
+                <li>TypeScript / JavaScript</li>
+                <li>その他、実際に使っている言語</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Frontend / Backend</h3>
+              <ul class="list small">
+                <li>React / Next.js など</li>
+                <li>Node.js (Express / NestJS 等)</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Infra / Tools</h3>
+              <ul class="list small">
+                <li>Docker / Docker Compose</li>
+                <li>GCP / AWS（予定）</li>
+                <li>Git / GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="section">
+        <div class="container">
+          <h2 class="section-title">Works</h2>
+          <p class="section-lead">
+            個人開発や副業での制作物を列挙するセクションです。<br />
+            この `side_work` プロジェクトで作成するサンプルアプリや、他のリポジトリへのリンクを配置します。
+          </p>
+          <div class="grid two-cols">
+            <article class="card">
+              <h3>サンプルアプリ（タスク管理ツール予定）</h3>
+              <p class="card-text">
+                副業ポートフォリオ用に作成予定の Web アプリケーションです。<br />
+                実装が進んだら、ここに GitHub リポジトリとデプロイ先 URL を掲載します。
+              </p>
+              <ul class="pill-list">
+                <li class="pill">予定: React / Next.js</li>
+                <li class="pill">予定: Node.js / GCP or AWS</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>その他のプロジェクト</h3>
+              <p class="card-text">
+                過去の個人開発・勉強用リポジトリ・技術検証など、公開可能な範囲でリンクを並べる想定です。
+              </p>
+              <p class="card-text placeholder">
+                ※ 実際のリポジトリ URL が決まり次第、ここに追記していきます。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-lead">
+            副業のご相談やお問い合わせの方法を記載するセクションです。<br />
+            実際の運用方針に合わせて、GitHub / SNS / フォームの有無などを調整してください。
+          </p>
+          <div class="grid two-cols">
+            <div>
+              <h3 class="section-subtitle">連絡手段（例）</h3>
+              <ul class="list">
+                <li>
+                  <strong>GitHub</strong>：
+                  <a href="https://github.com/your-github-username" target="_blank" rel="noreferrer"
+                    >https://github.com/your-github-username</a
+                  >
+                </li>
+                <li><strong>メール</strong>：example@example.com</li>
+              </ul>
+              <p class="note">
+                ※ セキュリティやスパム対策の観点から、メールアドレスの公開有無や表記方法は慎重に検討してください。
+              </p>
+            </div>
+            <div>
+              <h3 class="section-subtitle">メッセージ</h3>
+              <p>
+                現在は、平日夜間・土日祝を中心に、副業としての開発・技術支援のご相談をお受けする想定です。<br />
+                具体的な稼働時間や対応可能な内容は、その時の状況に応じて調整させてください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="copyright">
+          © <span id="year"></span> Negishi. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
