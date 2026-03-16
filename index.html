@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="theme-a">
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
@@ -28,6 +28,24 @@
           <a href="#works">Works</a>
           <a href="#contact">Contact</a>
         </nav>
+        <!-- テーマ切り替え：今後の複数テーマ用のUI（現時点ではテーマAのみ適用） -->
+        <div class="theme-switcher" aria-label="テーマ切り替え">
+          <button type="button" data-theme="a" class="theme-switcher__button is-active">
+            A
+          </button>
+          <button type="button" data-theme="b" class="theme-switcher__button">
+            B
+          </button>
+          <button type="button" data-theme="c" class="theme-switcher__button">
+            C
+          </button>
+          <button type="button" data-theme="d" class="theme-switcher__button">
+            D
+          </button>
+          <button type="button" data-theme="e" class="theme-switcher__button">
+            E
+          </button>
+        </div>
       </div>
     </header>
 
@@ -169,7 +187,10 @@
                     >https://github.com/negishi-sidework</a
                   >
                 </li>
-                <li><strong>メール</strong>：negishi330@gmail.com</li>
+                <li>
+                  <strong>メール</strong>：
+                  <a href="mailto:negishi330@gmail.com">negishi330@gmail.com</a>
+                </li>
               </ul>
             </div>
             <div>
@@ -193,7 +214,53 @@
     </footer>
 
     <script>
+      // フッターの年表示
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // テーマ切り替え（今後テーマB〜Eのスタイルを追加していく前提のたたき台）
+      (function () {
+        const THEME_KEY = "personal_site_theme";
+        const body = document.body;
+        const buttons = document.querySelectorAll(".theme-switcher__button");
+
+        // 保存済みのテーマがあれば復元
+        const savedTheme = window.localStorage.getItem(THEME_KEY);
+        if (savedTheme && /^theme-[a-e]$/.test(savedTheme)) {
+          body.className = body.className
+            .split(" ")
+            .filter((c) => !/^theme-[a-e]$/.test(c))
+            .concat(savedTheme)
+            .join(" ");
+
+          buttons.forEach((btn) => {
+            btn.classList.toggle(
+              "is-active",
+              btn.dataset.theme && `theme-${btn.dataset.theme}` === savedTheme
+            );
+          });
+        }
+
+        // クリックで切り替え
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const t = btn.dataset.theme;
+            if (!t) return;
+            const themeClass = `theme-${t}`;
+
+            body.className = body.className
+              .split(" ")
+              .filter((c) => !/^theme-[a-e]$/.test(c))
+              .concat(themeClass)
+              .join(" ");
+
+            buttons.forEach((b) =>
+              b.classList.toggle("is-active", b === btn)
+            );
+
+            window.localStorage.setItem(THEME_KEY, themeClass);
+          });
+        });
+      })();
     </script>
   </body>
 </html>
