@@ -355,3 +355,134 @@ a:hover {
   }
 }
 
+/* === テーマ切り替え UI === */
+.theme-switcher {
+  display: flex;
+  gap: 6px;
+  margin-left: 16px;
+}
+
+.theme-switcher__button {
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--muted);
+  font-size: 11px;
+  padding: 4px 8px;
+  cursor: pointer;
+  min-width: 26px;
+  text-align: center;
+}
+
+.theme-switcher__button.is-active {
+  border-color: var(--accent);
+  color: #e5e7eb;
+  background: rgba(56, 189, 248, 0.16);
+}
+
+@media (max-width: 640px) {
+  .theme-switcher {
+    margin-left: 0;
+  }
+}
+
+/* === テーマA: ミニマル白ベース === */
+body.theme-a {
+  background: #f9fafb;
+  color: #111827;
+}
+
+body.theme-a .site-header {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: #e5e7eb;
+}
+
+body.theme-a .site-title {
+  color: #111827;
+}
+
+body.theme-a .site-subtitle {
+  color: #6b7280;
+}
+
+body.theme-a .nav a {
+  color: #6b7280;
+}
+
+body.theme-a .nav a:hover {
+  color: #111827;
+}
+
+body.theme-a .hero {
+  padding-top: 80px;
+}
+
+body.theme-a .hero-label {
+  background: #e5e7eb;
+  border-color: #e5e7eb;
+  color: #4b5563;
+}
+
+body.theme-a .hero-text,
+body.theme-a .section-lead,
+body.theme-a .list {
+  color: #4b5563;
+}
+
+body.theme-a .btn.primary {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+body.theme-a .btn.ghost {
+  background: transparent;
+  color: #111827;
+  border-color: #e5e7eb;
+}
+
+body.theme-a .section {
+  background: #f9fafb;
+}
+
+body.theme-a .section-alt {
+  background: #ffffff;
+}
+
+body.theme-a .card {
+  background: #ffffff;
+  border-color: #e5e7eb;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+body.theme-a .pill {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+body.theme-a .site-footer {
+  background: #ffffff;
+  border-top-color: #e5e7eb;
+}
+
+body.theme-a .copyright {
+  color: #6b7280;
+}
+
+/* === テーマB〜E: ざっくりベース色だけ定義（あとで詳細調整） === */
+body.theme-b {
+  background: radial-gradient(circle at top left, #1d2440 0, #020617 45%, #020617 100%);
+}
+
+body.theme-c {
+  background: radial-gradient(circle at top, #f97316 0, #ec4899 40%, #0f172a 100%);
+}
+
+body.theme-d {
+  background: #f5efe6;
+}
+
+body.theme-e {
+  background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #020617 100%);
+}
